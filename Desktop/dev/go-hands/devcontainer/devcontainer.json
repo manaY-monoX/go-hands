@@ -1,0 +1,16 @@
+{
+    "name": "go basic training container",
+    "dockerComposeFile": ["../compose.yml"],
+    "service": "app",
+    "workspaceFolder": "/go/src/app",
+    "customizations": {
+        "vscode": {
+        "extensions": ["golang.go", "wholroyd.jinja"],
+            "settings": {
+                "go.gopath": "/go",
+                "go.inferGopath": true,
+                "go.useLanguageServer": true
+            }
+        }
+    }
+}

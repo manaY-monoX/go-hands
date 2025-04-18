@@ -1,0 +1,7 @@
+services:
+  app:
+    container_name: exercise-app
+    build: .
+    tty: true
+    volumes:
+      - ./app:/go/src/app
